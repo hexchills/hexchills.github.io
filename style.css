@@ -1,0 +1,167 @@
+body {
+    background: black;
+    color: rgb(80, 250, 123);
+    max-width: 850px;
+    margin: auto;
+    padding: 0 16px;
+    margin-bottom: 500px;
+    scrollbar-color: gray #151515;
+    font-family: sans-serif;
+    font-size: 30px;
+}
+
+::-webkit-scrollbar {
+    width: .66vw;
+    background-color: #151515;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: gray;
+    border-radius: 5px;
+}
+
+a {
+    color: rgb(255, 121, 198);
+
+}
+
+#tagcloud {
+    list-style: none;
+    text-align: center;
+    padding: 0;
+}
+
+#tagcloud li {
+    display: inline-block;
+}
+
+#tagcloud a {
+    margin: .1em .25em;
+}
+
+a:hover {
+    color: beige;
+}
+
+a:visited {
+    color: #6272a4;
+}
+
+h1 {
+    border-style: solid;
+    border-width: 0px 0px 2px 0px;
+    text-align: center;
+}
+
+h2 {
+    color: tomato;
+    text-align: center;
+}
+
+footer {
+    margin-top: 3em;
+    text-align: center;
+    border-style: solid;
+    border-width: 2px 0px 0px 0px;
+    padding: 1em;
+}
+
+img {
+    max-width: 90%;
+    max-height: 400px;
+    margin: auto;
+    display: block;
+}
+
+code {
+    overflow-wrap: break-word;
+    color: lime;
+}
+
+.taglist {
+    text-align: center;
+    margin-bottom: 2em;
+    margin-top: 2em;
+}
+
+@media (pointer: coarse) {
+    li>a {
+        display: inline-block;
+        padding: 0.2em 0;
+    }
+}
+
+@media print {
+    a[href] {
+        text-decoration: none;
+        color: black;
+    }
+
+    footer,
+    .taglist {
+        display: none;
+    }
+
+    body {
+        margin: 0;
+    }
+
+
+}
+
+@media (min-width: 55em) {
+    #artlist {
+        column-count: 2;
+    }
+}
+
+@media (min-width: 100em) {
+    #artlist {
+        column-count: 3;
+    }
+}
+
+input#search {
+    all: unset;
+    background: #222;
+    color: #fff;
+    padding: 0.7rem 1rem;
+    border-radius: 5px;
+    width: 100%;
+}
+
+.search {
+    width: 400px;
+    max-width: 85vw;
+    position: relative;
+    margin: 0.5rem auto 1.2rem;
+    display: flex;
+}
+
+button.clear-search {
+    all: unset;
+    position: absolute;
+    right: 4px;
+    top: 5px;
+    height: 30px;
+    width: 30px;
+    color: #888;
+    cursor: pointer;
+    transition: color 180ms ease-in-out;
+}
+
+button.clear-search:hover {
+    color: #eee;
+}
+
+
+.matched-recipe {
+    font-size: x-large;
+}
+
+.list-searched {
+    column-count: 1 !important;
+    list-style: decimal;
+    max-width: 600px;
+    margin: auto;
+}
